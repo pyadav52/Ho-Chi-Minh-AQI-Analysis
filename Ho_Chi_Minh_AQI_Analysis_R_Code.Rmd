@@ -11,8 +11,8 @@ library(OneR)
 ```
 
 ```{r}
-# reading the master dataset for Ho Chi Minh City combined for all years, path D:/Semester 1/DANA/Team Project
-df <- read.csv("D:/Semester 1/DANA/Team Project/HoChiMinhCity_PM2.5_2017_2021_Master_MTD.csv")
+# reading the master dataset for Ho Chi Minh City combined for all years
+df <- read.csv("D:/Project/HoChiMinhCity_PM2.5_2017_2021_Master_MTD.csv")
 View(df)
 ```
 
@@ -378,7 +378,7 @@ boxplot(new_df$tempC,
 
 ```{r}
 # Exporting the final dataset
-setwd("D:/Semester 1/DANA/Team Project")
+setwd("D:/Project")
 write.csv(new_df,"Final_Merged_Dataset.csv",row.names = FALSE)
 ```
 
